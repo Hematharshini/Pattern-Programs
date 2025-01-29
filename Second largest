@@ -1,0 +1,21 @@
+package project1;
+import java.util.*;
+public class Practice {
+	
+	public static void main(String[] args) {
+		int[] arr = {5,4,6,7,1};
+		int len = arr.length;
+		int max = arr[0];
+		int sec_max = arr[0];
+		for(int i=1; i<len; i++) {
+			if(arr[i]>max && arr[i]>sec_max){
+				sec_max = max;
+				max = arr[i];
+				
+			}
+		}
+		System.out.println("largest: "+max);
+		System.out.println("second largest:"+sec_max);
+	}
+
+}
