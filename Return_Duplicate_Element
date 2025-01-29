@@ -1,0 +1,24 @@
+package project1;
+import java.util.*;
+import java.util.Comparator;
+public class Practice {
+	public static void main(String[] args) {
+		int[] arr = {1,2,3,3,4,4,5,1,6,7,7};
+		int len = arr.length;
+		ArrayList<Integer> list = new ArrayList<>();
+		ArrayList<Integer> res = new ArrayList<>();
+		for(int i=0; i<len; i++){
+			if(!list.contains(arr[i])) {
+				list.add(arr[i]);
+			}
+			else {
+				res.add(arr[i]);
+			}
+		}
+		Collections.sort(res);
+		for(int i:res) {
+			System.out.print(i+" ");
+		}
+	}
+
+}
